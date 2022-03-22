@@ -121,24 +121,43 @@ let story = {
 // Where we are going to keep some our query selectors
 let start = document.querySelector('#start')
 let content = document.querySelector("#container")
+    // I add an event listener for the start button that allow
+    // us to click it and render the scene that we want it to go to.
     start.addEventListener('click', renderScene)
 
+// I made a function for my html content that will change.
+// Inside is a I have content.innerHTMl which will update the html.
 function renderScene() {
+    //Here is where I will update the html with innerHTML.
+    // I also create a new buttton named continue that will stay with all the scenes.
     content.innerHTML = `
     <h1 id="gameHeader">${story[story.currentPlace].title}</h1>
     <p>${story[story.currentPlace].text}</p>
     ${getPlayerInput()}
     <button id ="continue">Continue</button>
     `
+    // I pull the new continue button with a query selector and make a new
+    //event listener for it that will take me to the new scene when the player input is chosen.
     let continueButton = document.querySelector("#continue");
     continueButton.addEventListener('click', function() {
+        if (getPlayerInputValue() === 'winGame'){
+            return alert("You have won the game")
+        }
+        // below will give me the input value of the choice that the player chooses.
+        //This will trigger the scene to change.
         getPlayerInputValue()
     })
 }
 
+// Another function is made that checks for the input value of the players input.
 function getPlayerInputValue() {
+    // Here we grab all of the input types of radio with query selector all.
     let playerInput = document.querySelectorAll('input[type="radio"]');
+    // I make a for loop to that will continue to loop with the amount of choices
+    // that there is. 
     for (let i = 0; i < playerInput.length; i++){
+        // I make an if loop that checks (with .checked) if the [i] is true.
+        // if they both are true then it will return renderScene().
         if(playerInput[i].checked){
             story.currentPlace = playerInput[i].getAttribute("data-next")
             renderScene();
@@ -152,7 +171,7 @@ function getPlayerInput() {
     for (let i = 0; i < story[story.currentPlace].options.length; i++){
         input += `
         <div>
-            <input data-next = ${story[story.currentPlace].options[i].next} id = "radio${i}" type = "radio" name = 'options' />
+            <input data-next = ${story[story.currentPlace].options[i].next} id = "radio" type = "radio" name = 'options' />
             <label for "radio${i}">${story[story.currentPlace].options[i].choice}</label>
         </div>
         `

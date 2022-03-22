@@ -63,7 +63,7 @@ div > button {
 
 div > button:hover {
     background-color: lightblue;
-   opacity: 0.7;
+    opacity: 0.7;
 }
 
 #gameHeader {
