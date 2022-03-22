@@ -1,31 +1,94 @@
-::before ::after{
+*::before  *::after{
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
+    max-width: max-content;
+    max-height: max-content;
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(olive, grey); 
 }
 
 p {
-    display: block;
-
-    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-family:monospace;
+    background-image: linear-gradient(grey, white);
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 80%;
+    max-height: max-content;
+    
 }
 
 h1 {
-    font-size: 100px;
-    align-items: center;
+    font-size: 150px;
+    font-family: 'Amatic SC', cursive;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    
 }
+
+h2 {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+
 
 #title {
-    font-size: 150px;
+    font-size: 200px;
+    font-family: 'Amatic SC', cursive;
 }
 
+div > button {
+    margin: 10px;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    border-radius: 20px;
+    font-family: monospace;
+    
+}
 
+div > button:hover {
+    background-color: lightblue;
+   opacity: 0.7;
+}
+
+#gameHeader {
+    font-family: 'Amatic SC', cursive;
+    padding: 0px 30px 30px 30px;
+    margin: auto;
+}
+
+img {
+   max-width: 50%;
+   max-height: 50%;
+}
+
+label {
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+
+input[name='options']{
+    accent-color: black;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+
+}
 
 
 

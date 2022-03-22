@@ -63,11 +63,11 @@ let story = {
        Where would you like to go?`,
        options: [
            {
-               choice: 'You pick the bedroom key',
+               choice: 'You pick the Bedroom key',
                next: 'winGame'
            },
            {
-               choice: 'You pick the basment key',
+               choice: 'You pick the Basment key',
                next: 'gameOver2'
            }
        ]
@@ -75,7 +75,7 @@ let story = {
    winGame: {
        title: "Bedroom",
        text: `You go into the bedroom and you discover that there is a window that is wide open.
-        it leads to the backyard, where you can escape. You decide to take your chances and make it out alive.
+        it leads to the backyard, where you can escape. You decide to take your chances and make it out alive!!
         You go back home and never speak about what you saw ever again!`,
         options: [
             {
@@ -125,7 +125,7 @@ let content = document.querySelector("#container")
 
 function renderScene() {
     content.innerHTML = `
-    <h1>${story[story.currentPlace].title}</h1>
+    <h1 id="gameHeader">${story[story.currentPlace].title}</h1>
     <p>${story[story.currentPlace].text}</p>
     ${getPlayerInput()}
     <button id ="continue">Continue</button>
@@ -152,7 +152,7 @@ function getPlayerInput() {
     for (let i = 0; i < story[story.currentPlace].options.length; i++){
         input += `
         <div>
-            <input data-next = ${story[story.currentPlace].options[i].next} id= "radio${i}" type = "radio" name = 'options' />
+            <input data-next = ${story[story.currentPlace].options[i].next} id = "radio${i}" type = "radio" name = 'options' />
             <label for "radio${i}">${story[story.currentPlace].options[i].choice}</label>
         </div>
         `
