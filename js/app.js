@@ -73,7 +73,7 @@ let story = {
        ]
    },
    winGame: {
-       title: "Bedroom",
+       title: "Bedroom (Good Ending)",
        text: `You go into the bedroom and you discover that there is a window that is wide open.
         it leads to the backyard, where you can escape. You decide to take your chances and make it out alive!!
         You go back home and never speak about what you saw ever again!`,
@@ -86,9 +86,9 @@ let story = {
         
    },
    gameOver1: {
-       title: "Unfortunate Circumstances!",
-       text: `You decide to run as fast as you can but do not realise a hatch on the floor. You fall right through it and find a demogorgon.
-       He had been waiting for someone show up. You try to fight it but it ends up eating you whole. You died....`,
+       title: "Unfortunate Circumstances! (Alternate Ending)",
+       text: `You decide to run as fast as you can but do not realise a hatch on the floor. You fall right through it and break both legs.
+       There is a demogorgan and he has been waiting for someone to show up. You try to fight it but it ends up eating you whole. You died....`,
        options: [
            {
                choice: "Start Over??",
@@ -98,7 +98,7 @@ let story = {
    },
 
    gameOver2: {
-       title: "Basement",
+       title: "Basement (Bad Ending)",
        text: `You decided to go into the basement. It is dark but you find the light switch. You turn on the lights and and find a demongorgon.
        He had been waiting for someone show up. You try to fight it but it ends up eating you whole. You died....`,
        options: [
@@ -140,9 +140,6 @@ function renderScene() {
     //event listener for it that will take me to the new scene when the player input is chosen.
     let continueButton = document.querySelector("#continue");
     continueButton.addEventListener('click', function() {
-        if (getPlayerInputValue() === 'winGame'){
-            return alert("You have won the game")
-        }
         // below will give me the input value of the choice that the player chooses.
         //This will trigger the scene to change.
         getPlayerInputValue()
