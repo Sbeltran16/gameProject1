@@ -50,7 +50,7 @@ let story = {
        in the house and of the murders that have been committed.
        She tells you to check the kitchen and search thoroughly through it all.
        You enter the kitchen and you start look around to see what you can find.
-       opening cabinets and drawers, you find two keys. They are
+       Opening cabinets and drawers, you find two keys. They are
        labeled for the rooms they belong to. The first one says bedroom,
        the second one says basment. You head back to the living room and 
        there is a door that might lead to the basement and the other to bedroom.
@@ -84,7 +84,7 @@ let story = {
        img: "basment.jpeg",
        title: "Unfortunate Circumstances! (Alternate Ending)",
        text: `You decide to run as fast as you can but do not realise a hatch on the floor. You fall right through it and break both legs.
-       There is a demogorgan and he has been waiting for someone to show up. You try to fight it but it ends up eating you whole. You died....`,
+       There is a demogorgon and he has been waiting for someone to show up. You try to fight it but it ends up eating you whole. You died....`,
        options: [
            {
                choice: "Start Over??",
