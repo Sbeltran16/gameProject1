@@ -1,4 +1,5 @@
 ## Strange House
+Welcome to Strange House!!
 
 This is a text based game that has a story and consequences that happen when you choose the different options.
 Read the story carefully and choose on what you think is best!
