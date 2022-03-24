@@ -94,7 +94,7 @@ let story = {
    },
 
    gameOver2: {
-       img: "basment.jpeg",
+       img: "basment2.jpeg",
        title: "Basement (Bad Ending)",
        text: `You decided to go into the basement. It is dark but you find the light switch. You turn on the lights and and find a demongorgon.
        He had been waiting for someone show up. You try to fight it but it ends up eating you whole. You died....`,
