@@ -5,6 +5,9 @@ Read the story carefully and choose on what you think is best!
 
 ## Screenshots
 
+<img width="1440" alt="Screen Shot 2022-03-24 at 1 32 52 PM" src="https://user-images.githubusercontent.com/84055237/160005678-77a80578-7eab-46d3-b9b5-4f0898c163dc.png">
+
+<img width="1440" alt="Screen Shot 2022-03-24 at 1 33 18 PM" src="https://user-images.githubusercontent.com/84055237/160005556-ad78985f-8c0e-455d-ac06-421d3f2d4b31.png">
 
 
 ## Technologies Used
